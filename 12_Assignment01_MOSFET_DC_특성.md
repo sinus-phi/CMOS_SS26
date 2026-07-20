@@ -28,8 +28,8 @@
 
 온도 상승은 두 효과를 동시에 만든다.
 
-1. 문턱 부근과 OFF 영역에서는 thermal activation과 유효 문턱전압 변화 때문에 $I_{OFF}$가 크게 증가한다.
-2. 강한 inversion 영역에서는 phonon scattering으로 mobility가 감소해 $I_{ON}$이 소폭 감소한다.
+1. 문턱 부근과 OFF 영역에서는 <font color="#ffc000">thermal activation과 유효 문턱전압 변화</font> 때문에 $I_{OFF}$가 크게 증가한다.
+2. 강한 inversion 영역에서는 <font color="#ffc000">phonon scattering으로 mobility가 감소</font>해 $I_{ON}$이 소폭 감소한다.
 
 따라서 “온도가 오르면 전류가 모두 증가한다”는 해석은 틀리다. **동작 영역에 따라 지배 효과가 달라진다.**
 

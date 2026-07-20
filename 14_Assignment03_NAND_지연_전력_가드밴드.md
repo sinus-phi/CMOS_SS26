@@ -2,7 +2,7 @@
 
 ## 이 과제를 왜 했는가
 
-표준셀 평가는 한 개 delay 숫자로 끝나지 않는다. 입력 transition, pull-up/pull-down topology, drive strength, load, 온도, aging에 따라 delay와 power가 달라진다. 이 과제는 NAND2_X2/X4를 통해 이 변수를 분리하고, aged cell이 fresh timing을 만족하도록 timing·voltage guardband를 구한다.
+표준셀 평가는 **한 개 delay 숫자로 끝나지 않는다**.<font color="#ffc000"> 입력 transition, pull-up/pull-down topology, drive strength, load, 온도, aging에 따라 delay와 power가 달라진다</font>. 이 과제는 NAND2_X2/X4를 통해 이 변수를 분리하고, aged cell이 fresh timing을 만족하도록 timing·voltage guardband를 구한다.
 
 ## 질문의 의도
 
@@ -28,7 +28,7 @@
 
 ![NAND delay와 온도](assets/assignments/a03_delay_temperature.png)
 
-NAND2에서 output fall은 두 NMOS가 직렬인 경로를 통과한다. 반면 rise는 병렬 PMOS 중 하나 또는 둘이 켜질 수 있다.
+NAND2에서 **output fall**은 <font color="#ffc000">두 NMOS가 직렬인 경로를 통과</font>한다. 반면 **rise**는 <font color="#ffc000">병렬 PMOS 중 하나 또는 둘이 켜질 수 있다</font>.
 
 ```text
 fall: 직렬 NMOS 2개       -> 큰 유효 저항 -> 가장 느림
@@ -53,7 +53,7 @@ X4가 X2보다 큰 cell인데도 delay가 같았던 것은 X4의 load도 4 fF로
 - timing guardband: 약 8.6 ps, 즉 7.9%
 - aged delay를 fresh 수준으로 되돌리는 최소 공급전압: 약 0.77 V
 
-Timing guardband는 clock period에 여유를 더하는 방식이고, voltage guardband는 drive current를 높이는 방식이다. 후자는 delay를 회복하지만 dynamic energy가 대략 $CV^2$에 따라 증가하고 더 높은 전압 stress를 줄 수 있다.
+**Timing guardband**는<font color="#ffc000"> clock period에 여유를 더하는 방식</font>이고, **voltage guardband는** <font color="#ffc000">drive current를 높이는 방식</font>이다. 후자는 delay를 회복하지만 dynamic energy가 대략 $CV^2$에 따라 증가하고 더 높은 전압 stress를 줄 수 있다.
 
 ## 반드시 숙지할 Take away
 

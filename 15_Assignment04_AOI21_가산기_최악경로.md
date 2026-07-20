@@ -28,7 +28,7 @@
 
 ![AOI21 delay 비교](assets/assignments/a04_aoi_delay.png)
 
-Direct complex cell은 한 transistor network 안에서 함수를 계산하므로 중간 gate와 내부 output load를 줄일 수 있다. 그러나 특정 transition의 series stack이나 input 위치가 불리하면 모든 path가 빨라지는 것은 아니다.
+**Direct complex cell**은 <font color="#ffc000">한 transistor network 안에서 함수를 계산하므로 중간 gate와 내부 output load를 줄일 수 있다</font>. 그러나 특정 transition의 series stack이나 input 위치가 불리하면 모든 path가 빨라지는 것은 아니다.
 
 보고서에서는 decomposed 구현의 **평균 delay**가 약간 작았지만, **worst delay**는 direct 구현보다 컸다. 따라서 “평균이 빠르다”와 “timing signoff에 유리하다”는 같은 말이 아니다.
 

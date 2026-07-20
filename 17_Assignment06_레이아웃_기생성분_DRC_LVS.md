@@ -46,7 +46,7 @@ DRC pass: 공정의 폭·간격·겹침 규칙을 만족
 LVS pass: layout에서 추출한 연결과 schematic 연결이 일치
 ```
 
-둘 다 pass해도 delay, power, noise margin이 목표를 만족한다는 뜻은 아니다. 성능은 parasitic extraction 후 post-layout simulation 또는 timing analysis로 별도 확인해야 한다.
+<font color="#ffc000">둘 다 pass해도 delay, power, noise margin이 목표를 만족한다는 뜻은 아니다</font>. 성능은 parasitic extraction 후 post-layout simulation 또는 timing analysis로 별도 확인해야 한다.
 
 ## NAND layout에서 볼 것
 

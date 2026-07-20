@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_MOSFET_전류_전력_온도.md",
+                "file": "05_표준셀_설계_라이브러리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_MOSFET_전류_전력_온도"
+              "title": "05_표준셀_설계_라이브러리"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cbb9a694dd3b62ce",
@@ -211,14 +210,25 @@
   },
   "active": "dd1288b1a4678778",
   "lastOpenFiles": [
+    "04_SPICE_HSPICE_실습.md",
+    "03_신뢰성_노화_물리.md",
+    "02_MOSFET_전류_전력_온도.md",
     "01_CMOS_소자와_스케일링.md",
+    "00_학습가이드_기획.md",
+    "99_학습가이드_생성_지침.md",
+    "17_Assignment06_레이아웃_기생성분_DRC_LVS.md",
     "16_Assignment05_인버터_구동강도_사이징.md",
     "15_Assignment04_AOI21_가산기_최악경로.md",
-    "02_MOSFET_전류_전력_온도.md",
-    "17_Assignment06_레이아웃_기생성분_DRC_LVS.md",
     "14_Assignment03_NAND_지연_전력_가드밴드.md",
-    "12_Assignment01_MOSFET_DC_특성.md",
     "13_Assignment02_트랜지스터_노화_듀티사이클.md",
+    "12_Assignment01_MOSFET_DC_특성.md",
+    "11_레이아웃_물리설계_DRC_LVS.md",
+    "10_SPICE_복합셀_가산기_자동화.md",
+    "09_오류_마스킹_근사_컴퓨팅.md",
+    "08_Aging_전기파라미터_전력_지연.md",
+    "07_가드밴드_최소화_어닐링_합성.md",
+    "06_표준셀_노화_가드밴드.md",
+    "05_표준셀_설계_라이브러리.md",
     "assets/assignments/a04_adder_delay.png",
     "assets/assignments/a03_guardband.png",
     "assets/assignments/a02_vth_aging.png",
@@ -230,17 +240,6 @@
     "assets/assignments/a04_aoi_static.png",
     "assets/assignments/a06_postlayout_rc.png",
     "assets/assignments",
-    "11_레이아웃_물리설계_DRC_LVS.md",
-    "99_학습가이드_생성_지침.md",
-    "10_SPICE_복합셀_가산기_자동화.md",
-    "09_오류_마스킹_근사_컴퓨팅.md",
-    "08_Aging_전기파라미터_전력_지연.md",
-    "KAN-EML 산업적 활용.md",
-    "07_가드밴드_최소화_어닐링_합성.md",
-    "06_표준셀_노화_가드밴드.md",
-    "05_표준셀_설계_라이브러리.md",
-    "04_SPICE_HSPICE_실습.md",
-    "03_신뢰성_노화_물리.md",
-    "00_학습가이드_기획.md"
+    "KAN-EML 산업적 활용.md"
   ]
 }

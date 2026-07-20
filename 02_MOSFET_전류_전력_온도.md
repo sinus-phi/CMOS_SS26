@@ -68,13 +68,13 @@ $$
 - $V_{DD}$: 충전해야 하는 전압 크기
 - $I_{ON}$: ON 상태 transistor가 공급할 수 있는 전류
 
-전류 $I_{ON}$이 크면 같은 capacitor를 더 빨리 충전/방전할 수 있으므로 delay가 줄어든다. 그래서 강의는 "transistor ON current가 회로 speed를 제한한다"고 설명한다.
+전류 $I_{ON}$이 크면 같은 capacitor를 더 빨리 충전/방전할 수 있으므로 delay가 줄어든다. 그래서 강의는 "<font color="#ffc000">transistor ON current가 회로 speed를 제한</font>한다"고 설명한다.
 
 ### 그런데 왜 식에 $V_{DD}$가 분자에 있는가?
 
 여기서 헷갈리기 쉬운 점이 있다. $V_{DD}$가 커지면 $I_{ON}$도 커진다. 그러면 회로가 빨라져야 하는데, 위 식만 보면 $V_{DD}$가 분자에 있어서 delay가 커지는 것처럼 보인다.
 
-이 식은 먼저 <font color="#00b0f0">capacitor 관점에서 나온 것</font>이다. Capacitor에 저장되는 전하는 다음과 같다.
+이 식은 먼저 <font color="#00b0f0">capacitor 관점에서 나온 것</font>이다. **Capacitor에 저장되는 전하**는 다음과 같다.
 
 $$
 Q = C_L \cdot V
@@ -86,7 +86,7 @@ $$
 t \approx \frac{Q}{I} = \frac{C_L V_{DD}}{I_{ON}}
 $$
 
-가 된다. 즉, <font color="#ffc000">분자의 $V_{DD}$는 "더 높은 전압까지 충전하려면 더 많은 전하를 capacitor에 넣어야 한다"는 뜻</font>이다. 여기서 $C_{L}$ 자체가 반드시 커진다는 뜻은 아니다. 1차적으로는 capacitance는 그대로이고, 최종 전압이 높아져 저장해야 할 전하량 $Q$가 커진다.
+가 된다. 즉, <font color="#ffc000">분자의 Vdd는 "더 높은 전압까지 충전하려면 더 많은 전하를 capacitor에 넣어야 한다"는 뜻</font>이다. 여기서 $C_{L}$ 자체가 반드시 커진다는 뜻은 아니다. 1차적으로는 capacitance는 그대로이고, 최종 전압이 높아져 저장해야 할 전하량 $Q$가 커진다.
 
 하지만 실제 CMOS delay에서 $V_{DD}$를 바꿀 때는 $I_{ON}$도 함께 바뀐다. MOSFET이 ON일 때 gate voltage도 보통 $V_{GS}=V_{DD}$가 되므로, $V_{DD}$가 커지면 gate overdrive $V_{DD}-V_{th}$가 커지고 $I_{ON}$이 증가한다.
 
@@ -188,6 +188,9 @@ $$
 
 $P_{short\text{-}circuit}$은 입력이 천천히 바뀌는 동안 PMOS와 NMOS가 <font color="#ffc000">잠깐 동시에 켜져 VDD에서 GND로 직접 current path가 생길 때 발생</font>한다. 이상적인 급격한 transition에서는 작지만, <font color="#00b0f0">input slew가 느리거나 sizing이 맞지 않으면 무시하기 어렵다</font>.
 
+<font color="#92d050">Psc의 경우 ~ Vdd^3 </font>에 달하는 순간적으로 매우 높은 peak를 보임
+- 따라서 Slew가 느린경우 이 shortage로 인한 전력이 순간적으로 폭증
+
 ---
 
 
@@ -231,7 +234,7 @@ Lecture 4는 temperature effect를 다룬다.
 
 ![Lecture 4 page 11](assets/slides/lec04_p11.png)
 
-silicon 내부 carrier가 더 많은 에너지를 가지므로 channel 형성이 쉬워지고, 필요한 gate voltage가 낮아진다. 이것만 보면 $I_{ON}$에는 좋아 보이지만, <font color="#ffc000">실제 고온에서는 mobility 감소 효과가 강하게 작용해 driving current가 낮아지는 경우가 많다</font>.
+<font color="#e84d4d">silicon 내부 carrier가 더 많은 에너지를 가지므로 channel 형성이 쉬워지고</font>, 필요한 gate voltage가 낮아진다. 이것만 보면 $I_{ON}$에는 좋아 보이지만, <font color="#ffc000">실제 고온에서는 mobility 감소 효과가 강하게 작용해 driving current가 낮아지는 경우가 많다</font>.
 
 ### 온도에 따른 mobility와 Vth 변화 자세히 보기
 
@@ -387,9 +390,9 @@ Lecture 4의 중요한 loop는 다음이다.
 
 Lecture 4는 온도 제한이 단순히 transistor 성능 때문만은 아니라고 설명한다.
 
-- 사용자가 만지는 제품의 skin temperature가 너무 높으면 안전 문제가 된다. 슬라이드에서는 50도 이상이 사용자에게 고통스러울 수 있다고 언급한다.
-- 서로 다른 material의 thermal expansion coefficient 차이 때문에 mechanical stress가 생긴다.
-- 고온은 누설과 aging을 키워 장기 신뢰성을 낮춘다.
+- 사용자가 만지는 제품의 <font color="#00b0f0">skin temperature</font>가 너무 높으면 안전 문제가 된다. 슬라이드에서는 50도 이상이 사용자에게 고통스러울 수 있다고 언급한다.
+- <font color="#00b0f0">서로 다른 material의 thermal expansion coefficient 차이 때문에 mechanical stress</font>가 생긴다.
+- <font color="#e84d4d">고온은 누설과 aging을 키워 장기 신뢰성을 낮춘다</font>.
 
 즉, chip temperature constraint는 성능, 전력, packaging, 안전, 신뢰성을 모두 포함한다.
 
